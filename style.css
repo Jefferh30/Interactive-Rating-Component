@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-design{
+    background-color: hsl(213, 19%, 13%);
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.icon-star{
+    background-color: hsl(213, 19%, 18%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-numbers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.rating-numbers span{
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.rating-numbers span:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+}
+
+.rating-numbers span:active{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+h2{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+button{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border:none;
+    border-radius: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.thank-you-img{
+    margin: 0px auto 20px auto;
+    width: 140px;
+}
+
+.selected-stars{
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.thank-you-state{
+    text-align: center;
+}
