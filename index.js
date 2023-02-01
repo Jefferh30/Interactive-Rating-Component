@@ -6,8 +6,9 @@ function getRating(rating){
     rateNumber = rating.replace("rating", "");
 
     //adds class to element to show that it is selected
-    //TO DO: remove the selected element from array and use foreach to remove "rating-active" class
     if (rateNumber != ""){
+        //removes class from all elements to handle cases where more than one is selected
+        arrayRating.forEach(element => document.getElementById(element).classList.remove("rating-active"));
         document.getElementById(rating).classList.add("rating-active");
     }
 }
