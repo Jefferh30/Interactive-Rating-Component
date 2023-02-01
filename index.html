@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./index.js"></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -18,7 +19,7 @@
     <div class="card-design">
 
       <!-- Rating state start -->
-      <div class="rating-start">
+      <div id="ratingState"class="rating-start">
         <div class="icon-star">
           <img src="./images/icon-star.svg" width="15px" height="auto" alt="Icon star"/>
         </div>
@@ -28,20 +29,20 @@
           to help us improve our offering!</p>
 
         <div class="rating-numbers">
-          <span id="rating1">1</span>
-          <span id="rating2">2</span>
-          <span id="rating3">3</span>
-          <span id="rating4">4</span>
-          <span id="rating5">5</span>
+          <span id="rating1" onClick = "getRating(this.id)">1</span>
+          <span id="rating2" onClick = "getRating(this.id)">2</span>
+          <span id="rating3" onClick = "getRating(this.id)">3</span>
+          <span id="rating4" onClick = "getRating(this.id)">4</span>
+          <span id="rating5" onClick = "getRating(this.id)">5</span>
         </div>
-        <button onclick="getRating()">SUBMIT</button>
+        <button onClick="submitRating()">SUBMIT</button>
 
       </div>
 
       <!-- Thank you state start -->
-      <div class="thank-you-state">
+      <div id="thankYouState" class="thank-you-state">
         <div class="thank-you-img">
-          <img src="./images/illustration-thank-you.svg" width="140px" height="auto" alt="Thank you illustration"/>
+          <img src="./images/illustration-thank-you.svg" width="160px" height="auto" alt="Thank you illustration"/>
         </div>
         <p class="selected-stars">
           You selected <span id="selectedStars"></span> out of 5
