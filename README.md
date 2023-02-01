@@ -10,7 +10,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -23,8 +22,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [https://jefferh30.github.io/QR-code-component/](https://jefferh30.github.io/QR-code-component/)
-- Live Site URL: [https://jefferh30.github.io/QR-code-component/](https://jefferh30.github.io/QR-code-component/)
+- Solution URL: [https://jefferh30.github.io/Interactive-Rating-Component/](https://jefferh30.github.io/Interactive-Rating-Component/)
+- Live Site URL: [https://jefferh30.github.io/Interactive-Rating-Component/](https://jefferh30.github.io/Interactive-Rating-Component/)
 
 ## My process
 
@@ -34,18 +33,23 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- CSS hover states
+- Simple JavaScript
 
 ### What I learned
 
-Practiced the use of Flexbox and semantic HTML. Used the "main" and "footer" HTML elements.
-Also practiced using git commands to push from local environment to github.
+- Practiced the use of Flexbox and semantic HTML.
+- Got more comfortable with DOM JavaScript
+- Learned to add and remove a CSS class in order to change the style of elements using JavaScript.
+- Learned to pass the id of an element when using the onClick event.
+- Getting used to using git commands to push from local environment to GitHub.
 
 ```html
-<main>Inserted the QR component here</main>
+<main>Inserted the Rating component here</main>
 <footer>Inserted attribution here</footer>
 ```
 ```css
-.QR-card-parent{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,11 +57,15 @@ Also practiced using git commands to push from local environment to github.
 }
 ```
 
+```js
+//adds class to element to show that it is selected
+    if (rateNumber != ""){
+        //removes class from all elements to handle cases where more than one is selected
+        arrayRating.forEach(element => document.getElementById(element).classList.remove("rating-active"));
+        document.getElementById(rating).classList.add("rating-active");
+    }
+```
 
-
-### Continued development
-
-I need to keep practicing the use of git commands. I still get confused with some commands.
 
 ### Useful resources
 
